@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo 2025 - Equipos y Productos de Seguridad Industrial">
+    <title>IMECIXT - Productos de Seguridad</title>
+    
+    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/filters.css">
+</head>
+<body>
+    
+    <!-- Header (se carga dinámicamente) -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section (se carga dinámicamente) -->
+    <div id="hero-container"></div>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Nuestros Productos</h2>
+            
+            <!-- Productos se cargan dinámicamente desde JS -->
+            <div id="productos-container"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-contact">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="contact-title">¿Necesitas más información?</h2>
+            <p class="contact-subtitle">Contáctanos para cotizaciones y asesoramiento personalizado</p>
+            <a href="https://wa.me/51949122435?text=Hola,%20me%20interesa%20información%20sobre%20sus%20productos%20de%20seguridad" 
+               target="_blank"
+               class="btn-whatsapp-main">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (se carga dinámicamente) -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51930210841?text=Hola,%20me%20interesa%20información%20sobre%20sus%20productos%20de%20seguridad" 
+       target="_blank" 
+       class="whatsapp-float"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="js/products.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

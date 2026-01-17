@@ -1,0 +1,175 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+   Mobile First Approach
+========================================== */
+
+/* ==========================================
+   EXTRA SMALL (< 480px) - Móviles pequeños
+========================================== */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .category-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .category-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Botón WhatsApp flotante más pequeño */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    /* Sección de contacto */
+    .contact-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-whatsapp-main {
+        font-size: 0.95rem;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .btn-whatsapp-main span {
+        font-size: 0.9rem;
+    }
+}
+
+/* ==========================================
+   SMALL (481px - 768px) - Móviles grandes y tablets pequeñas
+========================================== */
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .category-badge {
+        padding: 0.5rem 1.25rem;
+    }
+    
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+/* ==========================================
+   MEDIUM (769px - 992px) - Tablets
+========================================== */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* ==========================================
+   LARGE (993px - 1200px) - Desktop pequeño
+========================================== */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* ==========================================
+   EXTRA LARGE (> 1200px) - Desktop grande
+========================================== */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* ==========================================
+   AJUSTES PARA ORIENTACIÓN
+========================================== */
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero {
+        padding: 2.5rem 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* ==========================================
+   AJUSTES PARA TOUCH DEVICES
+========================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Aumentar área de toque en dispositivos táctiles */
+    .nav-mobile a {
+        padding: 1.25rem 1rem;
+    }
+    
+    .product-card {
+        cursor: default;
+    }
+    
+    /* Eliminar efectos hover en táctiles */
+    .product-card:hover {
+        transform: none;
+    }
+    
+    .product-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* ==========================================
+   PRINT STYLES
+========================================== */
+@media print {
+    .whatsapp-float,
+    .btn-whatsapp-main,
+    header,
+    footer {
+        display: none;
+    }
+    
+    .product-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
