@@ -2,8 +2,8 @@
    HEADER
 ========================================== */
 header {
-    background: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--white) 0%, rgba(255, 255, 255, 0.98) 100%);
+    box-shadow: 0 2px 12px rgba(220, 38, 38, 0.1);
     position: fixed ;
     top: 0;
     left: 0;
@@ -11,10 +11,12 @@ header {
     z-index: 1000;
     width: 100%;
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 header.scrolled {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.92) 100%);
 }
 
 .header-container {
@@ -22,7 +24,7 @@ header.scrolled {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -35,39 +37,46 @@ header.scrolled {
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
 }
 
 .logo-icon {
-    background-color: transparent; /* Era var(--primary) */
     padding: 0.625rem;
     border-radius: 0.5rem;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;  /* Ajusta el tamaño */
-    height: 50px;
+    width: 140px;
+    height: 55px;
 }
 
 .logo-icon:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(15deg) scale(1.15);
 }
 
 .logo-icon i {
-    color: var(--secondary);
-    font-size: 1.5rem;
+    color: var(--white);
+    font-size: 1.3rem;
 }
 
 .logo-text h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.2;
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--text) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo-text p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-light);
+    font-weight: 500;
 }
 
 /* ==========================================
@@ -81,10 +90,16 @@ header.scrolled {
 .nav-desktop a {
     color: var(--text);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
-    padding: 0.5rem 0;
-    transition: color 0.3s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-desktop a:hover {
+    color: var(--secondary);
+    background: rgba(220, 38, 38, 0.1);
 }
 
 .nav-desktop a::after {
@@ -94,7 +109,7 @@ header.scrolled {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-dark);
+    background-color: var(--secondary);
     transition: width 0.3s ease;
 }
 
