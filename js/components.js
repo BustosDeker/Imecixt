@@ -235,20 +235,20 @@ function initSearchAndFilters() {
     const searchInput = document.getElementById('searchInput');
     const clearSearch = document.getElementById('clearSearch');
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
+
     // Búsqueda en tiempo real
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             currentSearch = e.target.value.toLowerCase().trim();
             applyFilters();
-            
+
             // Mostrar/ocultar botón de limpiar
             if (clearSearch) {
                 clearSearch.style.display = currentSearch ? 'flex' : 'none';
             }
         });
     }
-    
+
     // Limpiar búsqueda
     if (clearSearch) {
         clearSearch.addEventListener('click', () => {
@@ -259,7 +259,7 @@ function initSearchAndFilters() {
             searchInput.focus();
         });
     }
-    
+
     // Filtros por categoría
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -269,6 +269,7 @@ function initSearchAndFilters() {
             applyFilters();
         });
     });
+
 }
 
 function applyFilters() {
