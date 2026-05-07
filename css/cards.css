@@ -422,6 +422,25 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
     }
+    
+    /* Botones más compactos en tablet de 3 columnas */
+    .product-variants {
+        gap: 0.4rem;
+    }
+    
+    .variant-btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.7rem;
+        min-width: 45px;
+    }
+    
+    .product-card-variants {
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .product-card-variants .product-name {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -436,6 +455,13 @@
     
     .category-frame-title {
         font-size: 1rem;
+    }
+    
+    /* Botones en 2 columnas para tablet */
+    .product-variants {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
     }
 }
 
@@ -559,6 +585,51 @@
         font-size: 0.85rem;
         margin-bottom: 1.25rem;
     }
+    
+    /* Botones de variantes más compactos en móvil */
+    .product-variants {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.35rem;
+        margin-bottom: 0.75rem;
+        padding: 0;
+    }
+    
+    .variant-btn {
+        padding: 0.25rem 0.3rem;
+        font-size: 0.6rem;
+        min-width: auto;
+        border-radius: 6px;
+        border-width: 1px;
+        font-weight: 600;
+    }
+    
+    /* Imagen más compacta en móvil */
+    .product-image-container {
+        aspect-ratio: 1/1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .product-card-variants {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .product-card-variants .product-name {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .product-desc {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+    
+    .product-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+    }
 }
 
 /* ==========================================
@@ -574,37 +645,56 @@
     }
     
     .product-card {
-        padding: 0.875rem 0.5rem;
+        padding: 0.5rem 0.4rem;
+    }
+    
+    .product-card-variants {
+        padding: 0.5rem 0.4rem;
     }
     
     .product-card-variants .product-name {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.35rem;
+    }
+    
+    .product-image-container {
+        aspect-ratio: 1/1;
+        margin-bottom: 0.4rem;
     }
     
     .product-icon {
-        width: 90px;
-        height: 90px;
-        margin: 0.5rem 0;
+        width: 70px;
+        height: 70px;
+        margin: 0.25rem 0;
     }
     
     .product-name {
-        font-size: 0.9rem;
-    }
-    
-    .product-desc {
-        font-size: 0.75rem;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-    }
-    
-    .product-btn {
-        padding: 0.5rem 0.75rem;
         font-size: 0.8rem;
     }
     
-    .variant-btn {
-        padding: 0.3rem 0.5rem;
+    .product-desc {
         font-size: 0.65rem;
-        min-width: 40px;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        margin-bottom: 0.4rem;
+    }
+    
+    .product-btn {
+        padding: 0.35rem 0.5rem;
+        font-size: 0.65rem;
+    }
+    
+    /* Botones ultra compactos en móvil pequeño */
+    .product-variants {
+        gap: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .variant-btn {
+        padding: 0.2rem 0.25rem;
+        font-size: 0.55rem;
+        min-width: auto;
+        border-radius: 4px;
+        font-weight: 600;
     }
 }
