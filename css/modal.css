@@ -133,6 +133,19 @@
     z-index: 1;
 }
 
+.modal-variant-badge {
+    margin-top: 0.5rem;
+    background: var(--secondary);
+    color: white;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
 /* ==========================================
    MODAL INFO - COLUMNA DERECHA
 ========================================== */

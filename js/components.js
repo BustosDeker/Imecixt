@@ -141,26 +141,26 @@ const searchAndFiltersHTML = `
             <button class="filter-btn active" data-category="all">
                 <i class="fas fa-th"></i> Todos
             </button>
-            <button class="filter-btn" data-category="extintoresPQS">
-                <i class="fas fa-fire-extinguisher"></i> Extintores PQS
+            <button class="filter-btn" data-category="extintores">
+                <i class="fas fa-fire-extinguisher"></i> Extintores
             </button>
-            <button class="filter-btn" data-category="extintoresCO2">
-                <i class="fas fa-cloud"></i> Extintores CO2
+            <button class="filter-btn" data-category="extintoresUL">
+                <i class="fas fa-certificate"></i> Extintores UL
             </button>
-            <button class="filter-btn" data-category="extintoresPQSUL">
-                <i class="fas fa-certificate"></i> Extintores PQS-UL
+            <button class="filter-btn" data-category="accesoriosExtintores">
+                <i class="fas fa-box"></i> Accesorios
             </button>
-            <button class="filter-btn" data-category="extintoresAcetato">
-                <i class="fas fa-utensils"></i> Acetato de Potasio
+            <button class="filter-btn" data-category="botiquines">
+                <i class="fas fa-briefcase-medical"></i> Botiquines
             </button>
-            <button class="filter-btn" data-category="conos">
-                <i class="fas fa-triangle-exclamation"></i> Conos
+            <button class="filter-btn" data-category="epp">
+                <i class="fas fa-hard-hat"></i> EPP
             </button>
-            <button class="filter-btn" data-category="tacosViales">
-                <i class="fas fa-road"></i> Tacos Viales
+            <button class="filter-btn" data-category="seguridadVial">
+                <i class="fas fa-road"></i> Seguridad Vial
             </button>
-            <button class="filter-btn" data-category="equipamientoAdicional">
-                <i class="fas fa-box"></i> Equipamiento
+            <button class="filter-btn" data-category="lucesSenalizacion">
+                <i class="fas fa-lightbulb"></i> Luces y Señalización
             </button>
         </div>
         
@@ -171,21 +171,40 @@ const searchAndFiltersHTML = `
 `;
 
 // ==========================================
-// FUNCIÓN PARA CREAR TARJETA DE PRODUCTO
+// FUNCIÓN PARA CREAR TARJETA DE PRODUCTO CON VARIANTES
 // ==========================================
 function crearProductCard(producto, categoryKey) {
+    const productId = producto.nombre.replace(/\s+/g, '-').toLowerCase();
+    const variantes = producto.variantes || [];
+    const defaultVariant = variantes.find(v => v.id === producto.defaultVariant) || variantes[0];
+    
+    // Generar botones de variante
+    const botonesVariantes = variantes.map((variante, index) => `
+        <button class="variant-btn ${variante.id === producto.defaultVariant ? 'active' : ''}" 
+                onclick="cambiarVariante('${productId}', '${variante.id}', '${categoryKey}', '${producto.nombre}')"
+                data-variant="${variante.id}">
+            ${variante.label}
+        </button>
+    `).join('');
+    
     return `
-        <div class="product-card" data-category="${categoryKey}" data-name="${producto.nombre.toLowerCase()}">
-            <div class="product-icon ${producto.colorIcono}">
-                ${producto.imagen ? 
-                    `<img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">` 
-                    : 
-                    `<i class="fas ${producto.icono}"></i>`
-                }
-            </div>
+        <div class="product-card product-card-variants" data-category="${categoryKey}" data-name="${producto.nombre.toLowerCase()}" id="card-${productId}">
             <h4 class="product-name">${producto.nombre}</h4>
+            <div class="product-image-container">
+                <img id="img-${productId}" 
+                     src="${defaultVariant?.imagen || ''}" 
+                     alt="${producto.nombre}" 
+                     class="product-image"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="product-icon-fallback ${producto.colorIcono}" style="display: none;">
+                    <i class="fas ${producto.icono}"></i>
+                </div>
+            </div>
+            <div class="product-variants">
+                ${botonesVariantes}
+            </div>
             <p class="product-desc">${producto.descripcion}</p>
-            <button class="product-btn" onclick="mostrarDetalles('${producto.nombre}')">
+            <button class="product-btn" onclick="mostrarDetallesVariante('${producto.nombre}', '${producto.defaultVariant}')">
                 Ver Más <i class="fas fa-arrow-right"></i>
             </button>
         </div>
@@ -193,21 +212,21 @@ function crearProductCard(producto, categoryKey) {
 }
 
 // ==========================================
-// FUNCIÓN PARA CREAR SECCIÓN DE CATEGORÍA
+// FUNCIÓN PARA CREAR SECCIÓN DE CATEGORÍA CON MARCO
 // ==========================================
 function crearCategoriaSeccion(key, categoria) {
     const productosHTML = categoria.productos.map(prod => crearProductCard(prod, key)).join('');
     
     return `
-        <div class="category-section mb-16" data-category="${key}">
-            <div class="category-header">
-                <div class="category-badge">
-                    <h3 class="category-title">${categoria.title}</h3>
+        <div class="category-wrapper mb-16" data-category="${key}">
+            <div class="category-frame">
+                <div class="category-frame-header">
+                    <span class="category-frame-title">${categoria.title}</span>
                 </div>
-            </div>
-            <p class="category-description">${categoria.description}</p>
-            <div class="${categoria.grid}">
-                ${productosHTML}
+                <p class="category-frame-description">${categoria.description}</p>
+                <div class="products-grid-4">
+                    ${productosHTML}
+                </div>
             </div>
         </div>
     `;
@@ -360,6 +379,180 @@ function cargarComponentes() {
         }, 100);
     }
 }
+
+// ==========================================
+// FUNCIÓN PARA CAMBIAR ENTRE VARIANTES
+// ==========================================
+function cambiarVariante(productId, variantId, categoryKey, productName) {
+    // Buscar el producto en los datos
+    let productoEncontrado = null;
+    for (let categoria in productosData) {
+        const producto = productosData[categoria].productos.find(p => p.nombre === productName);
+        if (producto) {
+            productoEncontrado = producto;
+            break;
+        }
+    }
+    
+    if (!productoEncontrado) return;
+    
+    const variante = productoEncontrado.variantes.find(v => v.id === variantId);
+    if (!variante) return;
+    
+    // Actualizar imagen
+    const imgElement = document.getElementById(`img-${productId}`);
+    if (imgElement && variante.imagen) {
+        imgElement.src = variante.imagen;
+        imgElement.style.display = 'block';
+        const fallback = imgElement.nextElementSibling;
+        if (fallback) fallback.style.display = 'none';
+    }
+    
+    // Actualizar botones activos
+    const card = document.getElementById(`card-${productId}`);
+    if (card) {
+        const botones = card.querySelectorAll('.variant-btn');
+        botones.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.variant === variantId) {
+                btn.classList.add('active');
+            }
+        });
+    }
+    
+    // Actualizar función del botón Ver Más
+    const btnVerMas = card?.querySelector('.product-btn');
+    if (btnVerMas) {
+        btnVerMas.setAttribute('onclick', `mostrarDetallesVariante('${productName}', '${variantId}')`);
+    }
+}
+
+// ==========================================
+// FUNCIÓN PARA MOSTRAR DETALLES DE VARIANTE
+// ==========================================
+function mostrarDetallesVariante(nombreProducto, variantId) {
+    // Buscar el producto en los datos
+    let productoEncontrado = null;
+    let categoriaEncontrada = null;
+    
+    for (let categoria in productosData) {
+        const producto = productosData[categoria].productos.find(p => p.nombre === nombreProducto);
+        if (producto) {
+            productoEncontrado = producto;
+            categoriaEncontrada = categoria;
+            break;
+        }
+    }
+    
+    if (!productoEncontrado) {
+        alert('Información no disponible. Contáctanos para más detalles.');
+        return;
+    }
+    
+    const variante = productoEncontrado.variantes.find(v => v.id === variantId);
+    if (!variante || !variante.detalles) {
+        alert('Información no disponible para esta variante. Contáctanos para más detalles.');
+        return;
+    }
+    
+    const detalles = variante.detalles;
+    const tieneImagen = variante.imagen && variante.imagen.trim() !== '';
+    const varianteLabel = variante.label;
+    
+    // Crear el HTML del modal
+    const modalHTML = `
+        <div class="modal-overlay" id="modalOverlay" onclick="cerrarModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="cerrarModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-image-section">
+                    ${tieneImagen
+                        ? `<img src="${variante.imagen}" alt="${productoEncontrado.nombre} ${varianteLabel}" class="modal-product-image">`
+                        : `<div class="modal-icon-large ${productoEncontrado.colorIcono}">
+                             <i class="fas ${productoEncontrado.icono}"></i>
+                           </div>`
+                    }
+                    <h3 class="modal-image-title">${productoEncontrado.nombre}</h3>
+                    <span class="modal-variant-badge">${varianteLabel}</span>
+                </div>
+
+                <div class="modal-info-section">
+                    <div class="modal-scrollable-content">
+                        <div class="modal-header-compact">
+                            <h2 class="modal-title-large">${productoEncontrado.nombre} - ${varianteLabel}</h2>
+                            <p class="modal-subtitle-large">${productoEncontrado.descripcion}</p>
+                        </div>
+
+                        <div class="modal-details-grid">
+                            <div class="modal-detail-block">
+                                <h3><i class="fas fa-check-circle"></i> Características Técnicas</h3>
+                                <ul class="modal-features-list">
+                                    ${detalles.caracteristicas.map(car => `<li>${car}</li>`).join('')}
+                                </ul>
+                            </div>
+
+                            <div class="modal-detail-block">
+                                <h3><i class="fas fa-briefcase"></i> Usos Recomendados</h3>
+                                <p>${detalles.usos}</p>
+                            </div>
+
+                            <div class="modal-detail-block">
+                                <h3><i class="fas fa-shield-alt"></i> Garantía</h3>
+                                <p>${detalles.garantia}</p>
+                            </div>
+
+                            <div class="modal-detail-block">
+                                <h3><i class="fas fa-certificate"></i> Certificación</h3>
+                                <p>${detalles.certificacion}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-compact">
+                        <a href="https://wa.me/51924570575?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productoEncontrado.nombre + ' ' + varianteLabel)}"
+                           target="_blank"
+                           class="modal-btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                        </a>
+                        <button onclick="cerrarModal()" class="modal-btn-secondary">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+        document.getElementById('modalOverlay').classList.add('active');
+    }, 10);
+}
+
+// ==========================================
+// FUNCIÓN PARA CERRAR MODAL
+// ==========================================
+function cerrarModal() {
+    const modal = document.getElementById('modalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        setTimeout(() => {
+            modal.remove();
+            document.body.style.overflow = 'auto';
+        }, 300);
+    }
+}
+
+// Cerrar modal con tecla ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        cerrarModal();
+    }
+});
 
 // Ejecutar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', cargarComponentes);
