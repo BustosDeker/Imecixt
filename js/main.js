@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // LOG DE INICIO
     // ==========================================
     console.log('✅ Catálogo de Seguridad 2025 - IMECIXT - Cargado correctamente');
-    console.log('📱 WhatsApp: +51 930 210 841');
+    console.log('📱 WhatsApp: +51 924 570 575 / +51 979 771 512');
     console.log('📧 Email: seguridad.imeci@gmail.com');
     
 });
@@ -330,7 +330,7 @@ function mostrarDetalles(nombreProducto) {
                     </div>
 
                     <div class="modal-footer-compact">
-                        <a href="https://wa.me/51930210841?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productoEncontrado.nombre)}"
+                        <a href="https://wa.me/51924570575?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productoEncontrado.nombre)}"
                            target="_blank"
                            class="modal-btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> Consultar por WhatsApp

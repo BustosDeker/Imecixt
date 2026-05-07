@@ -5,119 +5,66 @@
 const productosData = {
     extintoresPQS: {
         title: "Extintores PQS",
-        description: "Extintores de polvo químico seco, ideales para fuegos clase A, B y C. Alta efectividad en ambientes industriales y comerciales.",
+        description: "Extintores de polvo químico seco ABC, ideales para fuegos clase A, B y C. Disponibles en capacidades desde 1 kg hasta 50 kg.",
         icon: "fa-fire-extinguisher",
         iconColor: "icon-red",
-        grid: "products-grid",
+        grid: "products-grid-3",
         productos: [
             {
-                nombre: "PQS 1 KG",
-                descripcion: "Portátil y compacto. Ideal para vehículos y espacios pequeños.",
+                nombre: "PQS Compactos",
+                descripcion: "1-4 KG: Portátiles para vehículos, oficinas y comercios pequeños.",
                 icono: "fa-fire-extinguisher",
                 colorIcono: "icon-red",
-                imagen: "img/productos/pqs-1kg.jpg", 
+                imagen: "img/productos/pqs-2kg.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Capacidad: 1 kg de polvo químico seco",
-                        "Peso total: 2.5 kg aproximadamente",
-                        "Altura: 30 cm",
+                        "Capacidades: 1, 2, 4 kg de polvo químico seco",
+                        "Eficacia: 1A 5BC hasta 4A 20BC",
                         "Presión de trabajo: 195 PSI",
-                        "Eficacia: 1A 5BC"
+                        "Ideales para espacios reducidos",
+                        "Certificados INDECOPI y NTP"
                     ],
-                    usos: "Ideal para vehículos, motocicletas, embarcaciones y espacios reducidos.",
+                    usos: "Vehículos, oficinas pequeñas, consultorios, hogares, comercios.",
                     garantia: "1 año de garantía. Recarga y mantenimiento disponible.",
-                    certificacion: "Certificado según normas INDECOPI y NTP."
+                    certificacion: "Certificados según normas INDECOPI y NTP. Incluyen manómetro."
                 }
             },
             {
-                nombre: "PQS 2 KG",
-                descripcion: "Versión compacta para oficinas y hogares.",
+                nombre: "PQS Medianos",
+                descripcion: "6-12 KG: Tamaño estándar para comercios, empresas e industrias medianas.",
                 icono: "fa-fire-extinguisher",
                 colorIcono: "icon-red",
-                imagen: "img/productos/pqs-1kg.jpg", 
+                imagen: "img/productos/pqs-6kg.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Capacidad: 2 kg de polvo químico seco",
-                        "Peso total: 3.8 kg aproximadamente",
-                        "Altura: 35 cm",
+                        "Capacidades: 6, 9, 12 kg de polvo químico seco",
+                        "Eficacia: 6A 40BC hasta 20A 120BC",
                         "Presión de trabajo: 195 PSI",
-                        "Eficacia: 2A 10BC"
+                        "Para áreas de trabajo y comercios",
+                        "Soporte técnico completo"
                     ],
-                    usos: "Perfecto para oficinas pequeñas, consultorios médicos y hogares.",
-                    garantia: "1 año de garantía con servicio técnico autorizado.",
-                    certificacion: "Cumple con normas NTP 350.043"
-                }
-            },
-            {
-                nombre: "PQS 4 KG",
-                descripcion: "Tamaño estándar para comercios y empresas.",
-                icono: "fa-fire-extinguisher",
-                colorIcono: "icon-red",
-                detalles: {
-                    caracteristicas: [
-                        "Capacidad: 4 kg de polvo químico seco",
-                        "Peso total: 6.5 kg aproximadamente",
-                        "Altura: 45 cm",
-                        "Presión de trabajo: 195 PSI",
-                        "Eficacia: 4A 20BC"
-                    ],
-                    usos: "Recomendado para comercios, talleres, restaurantes y oficinas medianas.",
-                    garantia: "1 año de garantía. Incluye manómetro de presión.",
-                    certificacion: "Certificación INDECOPI vigente"
-                }
-            },
-            {
-                nombre: "PQS 6 KG",
-                descripcion: "Mayor capacidad para áreas industriales.",
-                icono: "fa-fire-extinguisher",
-                colorIcono: "icon-red",
-                detalles: {
-                    caracteristicas: [
-                        "Capacidad: 6 kg de polvo químico seco",
-                        "Peso total: 9 kg aproximadamente",
-                        "Altura: 50 cm",
-                        "Presión de trabajo: 195 PSI",
-                        "Eficacia: 6A 40BC"
-                    ],
-                    usos: "Ideal para industrias, almacenes, fábricas y áreas de alto riesgo.",
-                    garantia: "1 año de garantía con soporte técnico completo.",
-                    certificacion: "Certificado por organismos nacionales de seguridad"
-                }
-            },
-            {
-                nombre: "PQS 9 KG",
-                descripcion: "Alta capacidad para grandes instalaciones.",
-                icono: "fa-fire-extinguisher",
-                colorIcono: "icon-red",
-                detalles: {
-                    caracteristicas: [
-                        "Capacidad: 9 kg de polvo químico seco",
-                        "Peso total: 13 kg aproximadamente",
-                        "Altura: 55 cm",
-                        "Presión de trabajo: 195 PSI",
-                        "Eficacia: 10A 60BC"
-                    ],
-                    usos: "Para grandes instalaciones industriales, plantas químicas y zonas de alta protección.",
+                    usos: "Comercios, talleres, restaurantes, industrias medianas, almacenes.",
                     garantia: "1 año de garantía con mantenimiento preventivo incluido.",
-                    certificacion: "Cumple estándares internacionales de seguridad"
+                    certificacion: "Certificación INDECOPI vigente. Servicio técnico autorizado."
                 }
             },
             {
-                nombre: "PQS 12 KG",
-                descripcion: "Máxima protección para zonas industriales.",
+                nombre: "PQS Industriales",
+                descripcion: "15-50 KG: Alta capacidad móvil con ruedas para instalaciones industriales grandes.",
                 icono: "fa-fire-extinguisher",
                 colorIcono: "icon-red",
+                imagen: "img/productos/pqs-25kg.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Capacidad: 12 kg de polvo químico seco",
-                        "Peso total: 18 kg aproximadamente",
-                        "Altura: 60 cm",
-                        "Presión de trabajo: 195 PSI",
-                        "Eficacia: 20A 120BC"
+                        "Capacidades: 15, 25, 50 kg de polvo químico seco",
+                        "Eficacia: 20A 120BC hasta 40A 240BC",
+                        "Versión móvil con ruedas (todos con carro)",
+                        "Máxima protección para grandes áreas",
+                        "Carro rodante para fácil maniobrabilidad"
                     ],
-                    usos: "Máxima protección para complejos industriales, refinerías y áreas de alto riesgo.",
-                    garantia: "1 año de garantía con inspecciones periódicas.",
-                    certificacion: "Certificado internacional y nacional"
+                    usos: "Grandes instalaciones, plantas manufactureras, refinerías, puertos, aeropuertos.",
+                    garantia: "1 año de garantía con inspecciones periódicas y soporte especializado.",
+                    certificacion: "Incluyen certificado y tarjeta de inspección. Certificación internacional."
                 }
             }
         ]
@@ -135,7 +82,7 @@ const productosData = {
                 descripcion: "Ideal para equipos electrónicos y salas de servidores.",
                 icono: "fa-cloud",
                 colorIcono: "icon-blue",
-                imagen: "img/productos/C02_5L.jpg", 
+                imagen: "img/productos/co2-5lb.jpg",
                 detalles: {
                     caracteristicas: [
                         "Capacidad: 5 libras de CO2",
@@ -154,7 +101,7 @@ const productosData = {
                 descripcion: "Mayor capacidad para protección de equipamiento eléctrico.",
                 icono: "fa-cloud",
                 colorIcono: "icon-blue",
-                imagen: "img/productos/C02_10L.jpg", 
+                imagen: "img/productos/co2-10lb.jpg",
                 detalles: {
                     caracteristicas: [
                         "Capacidad: 10 libras de CO2",
@@ -167,23 +114,42 @@ const productosData = {
                     garantia: "1 año de garantía con recarga certificada.",
                     certificacion: "Aprobado para fuegos clase C (eléctricos)"
                 }
+            },
+            {
+                nombre: "CO2 15 LB",
+                descripcion: "Máxima capacidad para protección extensa de equipos eléctricos.",
+                icono: "fa-cloud",
+                colorIcono: "icon-blue",
+                imagen: "img/productos/co2-15lb.jpg",
+                detalles: {
+                    caracteristicas: [
+                        "Capacidad: 15 libras de CO2",
+                        "Peso total: 19 kg aproximadamente",
+                        "Altura: 65 cm",
+                        "Presión de trabajo: 850 PSI",
+                        "Eficacia: 15BC"
+                    ],
+                    usos: "Para grandes data centers, plantas industriales con equipos eléctricos sensibles y áreas de alta protección.",
+                    garantia: "1 año de garantía. No deja residuos ni daña equipos.",
+                    certificacion: "Incluye certificado y tarjeta de inspección"
+                }
             }
         ]
     },
-    
+
     extintoresAcetato: {
         title: "Extintores Acetato de Potasio",
-        description: "Especialmente diseñados para cocinas industriales y comerciales. Fuegos clase K (aceites y grasas).",
+        description: "Especialmente diseñados para cocinas industriales y comerciales. Fuegos clase K (aceites y grasas animales o vegetales).",
         icon: "fa-utensils",
         iconColor: "icon-purple",
         grid: "products-grid-2",
         productos: [
             {
                 nombre: "Acetato K 6 LT",
-                descripcion: "Protección para cocinas pequeñas y medianas.",
+                descripcion: "Capacidad estándar para cocinas pequeñas y medianas.",
                 icono: "fa-utensils",
                 colorIcono: "icon-purple",
-                imagen: "img/productos/acetato_6L.jpg", 
+                imagen: "img/productos/acetato-6l.jpg",
                 detalles: {
                     caracteristicas: [
                         "Capacidad: 6 litros de acetato de potasio",
@@ -194,15 +160,15 @@ const productosData = {
                     ],
                     usos: "Especial para cocinas de restaurantes, comedores industriales y áreas de preparación de alimentos.",
                     garantia: "1 año de garantía. Agente limpio y no tóxico.",
-                    certificacion: "Certificado para fuegos clase K (aceites vegetales)"
+                    certificacion: "Certificado para fuegos clase K (aceites vegetales y grasas animales)"
                 }
             },
             {
                 nombre: "Acetato K 9 LT",
-                descripcion: "Alta capacidad para cocinas industriales.",
+                descripcion: "Alta capacidad para cocinas industriales grandes.",
                 icono: "fa-utensils",
                 colorIcono: "icon-purple",
-                imagen: "img/productos/acetato_9L.jpg", 
+                imagen: "img/productos/acetato-9l.jpg",
                 detalles: {
                     caracteristicas: [
                         "Capacidad: 9 litros de acetato de potasio",
@@ -218,80 +184,112 @@ const productosData = {
             }
         ]
     },
-    
-    conos: {
-        title: "Conos de Seguridad",
-        description: "Conos viales de alta visibilidad para señalización y delimitación de áreas.",
-        icon: "fa-triangle-exclamation",
-        iconColor: "icon-orange",
-        grid: "products-grid",
+
+    extintoresPQSUL: {
+        title: "Extintores PQS-UL",
+        description: "Extintores con certificación UL (Underwriters Laboratories) de marcas Buckeye, Amerex, Ansul y Badger. Garantía internacional de calidad y seguridad.",
+        icon: "fa-fire-extinguisher",
+        iconColor: "icon-red",
+        grid: "products-grid-3",
         productos: [
             {
-                nombre: "Cono 15 CM",
-                descripcion: "Cono pequeño para señalización interna.",
-                icono: "fa-triangle-exclamation",
-                colorIcono: "icon-orange",
-                
+                nombre: "PQS-UL 10 LB",
+                descripcion: "Certificación UL internacional. Ideal para oficinas y comercios.",
+                icono: "fa-fire-extinguisher",
+                colorIcono: "icon-red",
+                imagen: "img/productos/pqsul-10lb.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Altura: 15 cm",
-                        "Material: PVC flexible de alta resistencia",
-                        "Color: Naranja fluorescente",
-                        "Base: Cuadrada antideslizante",
-                        "Peso: 200 gramos"
+                        "Capacidad: 10 libras de polvo químico seco",
+                        "Peso total: 8 kg aproximadamente",
+                        "Altura: 48 cm",
+                        "Presión de trabajo: 195 PSI",
+                        "Eficacia: 4A 60BC"
                     ],
-                    usos: "Señalización interna, estacionamientos, eventos y áreas de trabajo ligero.",
-                    garantia: "Resistente a condiciones climáticas.",
-                    certificacion: "Material reflectivo opcional"
+                    usos: "Perfecto para oficinas, comercios, restaurantes y áreas con equipos de valor.",
+                    garantia: "1 año de garantía. Marca: Buckeye, Amerex, Ansul o Badger.",
+                    certificacion: "Certificación UL internacional. Incluye certificado y tarjeta de inspección."
                 }
             },
             {
-                nombre: "Cono 30 CM",
-                descripcion: "Tamaño estándar para áreas de trabajo.",
-                icono: "fa-triangle-exclamation",
-                colorIcono: "icon-orange",
+                nombre: "PQS-UL 20 LB",
+                descripcion: "Mayor capacidad con certificación UL. Para áreas industriales.",
+                icono: "fa-fire-extinguisher",
+                colorIcono: "icon-red",
+                imagen: "img/productos/pqsul-20lb.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Altura: 30 cm",
-                        "Material: PVC de alta densidad",
-                        "Color: Naranja con franjas reflectivas",
-                        "Base: Cuadrada con peso adicional",
-                        "Peso: 500 gramos"
+                        "Capacidad: 20 libras de polvo químico seco",
+                        "Peso total: 14 kg aproximadamente",
+                        "Altura: 58 cm",
+                        "Presión de trabajo: 195 PSI",
+                        "Eficacia: 10A 80BC"
                     ],
-                    usos: "Zonas de construcción, mantenimiento vial, eventos masivos.",
-                    garantia: "Alta durabilidad y resistencia UV.",
-                    certificacion: "Franjas reflectivas certificadas"
+                    usos: "Ideal para talleres, almacenes, plantas industriales y áreas de trabajo.",
+                    garantia: "1 año de garantía. Marcas certificadas UL.",
+                    certificacion: "Certificación UL internacional. Garantía de calidad auditada."
                 }
             },
             {
-                nombre: "Cono 45 CM",
-                descripcion: "Ideal para vías y zonas de alto tráfico.",
-                icono: "fa-triangle-exclamation",
-                colorIcono: "icon-orange",
+                nombre: "PQS-UL 30 LB",
+                descripcion: "Máxima capacidad con certificación UL. Protección industrial superior.",
+                icono: "fa-fire-extinguisher",
+                colorIcono: "icon-red",
+                imagen: "img/productos/pqsul-30lb.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Altura: 45 cm",
-                        "Material: PVC industrial reforzado",
-                        "Color: Naranja con doble franja reflectiva",
-                        "Base: Cuadrada lastrada",
-                        "Peso: 1 kg"
+                        "Capacidad: 30 libras de polvo químico seco",
+                        "Peso total: 20 kg aproximadamente",
+                        "Altura: 68 cm",
+                        "Presión de trabajo: 195 PSI",
+                        "Eficacia: 20A 120BC"
                     ],
-                    usos: "Carreteras, autopistas, zonas de alto tráfico vehicular.",
-                    garantia: "Garantía de 2 años contra deformación.",
-                    certificacion: "Cumple normas de tránsito nacional"
+                    usos: "Para grandes instalaciones, plantas manufactureras, complejos industriales.",
+                    garantia: "1 año de garantía. Soporte técnico especializado.",
+                    certificacion: "Certificación UL internacional. Cumple normas de calidad globales."
+                }
+            }
+        ]
+    },
+
+    conos: {
+        title: "Conos de Seguridad",
+        description: "Conos viales de alta visibilidad para señalización y delimitación de áreas. Disponibles en alturas desde 30 cm hasta 70 cm.",
+        icon: "fa-triangle-exclamation",
+        iconColor: "icon-orange",
+        grid: "products-grid-3",
+        productos: [
+            {
+                nombre: "Conos Medianos",
+                descripcion: "30-45 CM: Tamaños estándar para obras y zonas de tráfico.",
+                icono: "fa-triangle-exclamation",
+                colorIcono: "icon-orange",
+                imagen: "img/productos/cono-30cm.jpg",
+                detalles: {
+                    caracteristicas: [
+                        "Alturas: 30 y 45 cm disponibles",
+                        "Material: PVC de alta densidad e industrial",
+                        "Franjas reflectivas simples y dobles",
+                        "Base lastrada para estabilidad",
+                        "Resistencia UV prolongada"
+                    ],
+                    usos: "Zonas de construcción, carreteras, mantenimiento vial, eventos masivos.",
+                    garantia: "Garantía de 2 años contra deformación y decoloración.",
+                    certificacion: "Cumple normas de tránsito nacional. Franjas reflectivas certificadas."
                 }
             },
             {
-                nombre: "Cono 70 CM",
-                descripcion: "Máxima visibilidad para carreteras.",
+                nombre: "Cono Grande 70 CM",
+                descripcion: "70 CM: Máxima visibilidad para carreteras y autopistas.",
                 icono: "fa-triangle-exclamation",
                 colorIcono: "icon-orange",
+                imagen: "img/productos/cono-70cm.jpg",
                 detalles: {
                     caracteristicas: [
                         "Altura: 70 cm",
                         "Material: PVC premium extra resistente",
-                        "Color: Naranja con triple franja reflectiva",
-                        "Base: Cuadrada con sistema de anclaje",
+                        "Triple franja reflectiva",
+                        "Base con sistema de anclaje",
                         "Peso: 2 kg"
                     ],
                     usos: "Autopistas, peajes, obras viales mayores, señalización nocturna.",
@@ -371,14 +369,14 @@ const productosData = {
     
     equipamientoAdicional: {
         title: "Equipamiento Adicional",
-        description: "Productos complementarios para seguridad integral.",
+        description: "Productos complementarios para seguridad integral: señaléticas, botiquines, luces de emergencia, gabinetes y más.",
         icon: "fa-box",
         iconColor: "icon-gray",
         grid: "products-grid-3",
         productos: [
             {
-                nombre: "Señaléticas",
-                descripcion: "Señales de seguridad estándar y fotoluminiscentes.",
+                nombre: "Señaléticas de Seguridad",
+                descripcion: "Señales estándar y fotoluminiscentes para emergencias y evacuación.",
                 icono: "fa-signs-post",
                 colorIcono: "icon-green",
                 imagen: "img/productos/senaletica.jpg",
@@ -386,27 +384,28 @@ const productosData = {
                     caracteristicas: [
                         "Material: Acrílico, PVC o aluminio",
                         "Tamaños: 20x30 cm, 30x40 cm, personalizado",
-                        "Tipos: Preventivas, informativas, prohibitivas",
+                        "Tipos: Preventivas, informativas, prohibitivas, evacuación",
                         "Acabado: Fotoluminiscente opcional",
                         "Instalación: Autoadhesivo o con perforaciones"
                     ],
-                    usos: "Señalización de emergencia, rutas de evacuación, zonas de riesgo.",
+                    usos: "Señalización de emergencia, rutas de evacuación, zonas de riesgo, extintores.",
                     garantia: "Material duradero para interiores y exteriores.",
                     certificacion: "Según norma NTP 399.010-1"
                 }
             },
             {
-                nombre: "Botiquines",
-                descripcion: "Botiquines de madera y tipo lonchera (chico y grande).",
+                nombre: "Botiquines y Primeros Auxilios",
+                descripcion: "Botiquines de madera y tipo lonchera para empresas y vehículos.",
                 icono: "fa-briefcase-medical",
                 colorIcono: "icon-red",
+                imagen: "img/productos/botiquin.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Tipos: Madera (20x30, 30x40, 24x34)",
-                        "Lonchera chica y grande",
-                        "Material: Madera y metal",
-                        "Contenido: Equipamiento básico incluido",
-                        "Cierre: Con llave de seguridad"
+                        "Tipos: Madera (20x30, 30x40, 24x34 cm)",
+                        "Loncheras: Chica y grande",
+                        "Material: Madera resistente y metal",
+                        "Cierre: Con llave de seguridad",
+                        "Contenido: Equipamiento básico incluido"
                     ],
                     usos: "Primeros auxilios en empresas, oficinas, fábricas y vehículos.",
                     garantia: "Incluye lista de contenido sugerido.",
@@ -414,75 +413,22 @@ const productosData = {
                 }
             },
             {
-                nombre: "Kit Antiderrame",
-                descripcion: "Con bandeja de acero para control de derrames.",
-                icono: "fa-droplet",
-                colorIcono: "icon-yellow",
-                detalles: {
-                    caracteristicas: [
-                        "Bandeja: Acero galvanizado",
-                        "Capacidad: Absorbente para 50-100 litros",
-                        "Contenido: Paños, barreras, guantes, bolsas",
-                        "Dimensiones: Bandeja 60x40x15 cm",
-                        "Incluye: Instructivo de uso"
-                    ],
-                    usos: "Control de derrames de líquidos peligrosos, aceites, combustibles.",
-                    garantia: "Material absorbente de alta calidad.",
-                    certificacion: "Cumple normas ambientales"
-                }
-            },
-            {
                 nombre: "Luces de Emergencia",
-                descripcion: "Luces Opalux y Ricers para iluminación de emergencia.",
+                descripcion: "Luces LED Opalux y Ricers con autonomía de 2-4 horas.",
                 icono: "fa-lightbulb",
                 colorIcono: "icon-blue",
+                imagen: "img/productos/luz-emergencia.jpg",
                 detalles: {
                     caracteristicas: [
-                        "Tipos: Opalux y Ricers",
-                        "Autonomía: 2-4 horas",
                         "Tecnología: LED de bajo consumo",
+                        "Autonomía: 2-4 horas de iluminación",
                         "Batería: Recargable automática",
-                        "Instalación: Empotrable o sobrepuesto"
+                        "Instalación: Empotrable o sobrepuesto",
+                        "Indicador de carga incluido"
                     ],
                     usos: "Iluminación de emergencia en cortes de energía, rutas de evacuación.",
                     garantia: "1 año de garantía con mantenimiento incluido.",
                     certificacion: "Certificado según norma de emergencia"
-                }
-            },
-            {
-                nombre: "Gabinetes",
-                descripcion: "Gabinetes contra incendios para equipos de emergencia.",
-                icono: "fa-box",
-                colorIcono: "icon-red",
-                detalles: {
-                    caracteristicas: [
-                        "Material: Plancha metálica pintado rojo",
-                        "Tamaños: Para extintores de 4-12 kg",
-                        "Puerta: Con vidrio templado o acrílico",
-                        "Accesorios: Soporte interno incluido",
-                        "Cerradura: Con llave o cierre rápido"
-                    ],
-                    usos: "Almacenamiento seguro y visible de extintores en edificios.",
-                    garantia: "Pintura anticorrosiva de larga duración.",
-                    certificacion: "Según normas de protección contra incendios"
-                }
-            },
-            {
-                nombre: "Pedestales",
-                descripcion: "Pedestales para extintores, diversos tamaños.",
-                icono: "fa-box-archive",
-                colorIcono: "icon-gray",
-                detalles: {
-                    caracteristicas: [
-                        "Material: Tubo metálico de 1.5\" a 2\"",
-                        "Acabado: Pintura roja horneada",
-                        "Altura: 80 cm a 1.20 m",
-                        "Base: Circular con pernos de anclaje",
-                        "Capacidad: Para extintores de 4-12 kg"
-                    ],
-                    usos: "Ubicación estratégica de extintores en áreas abiertas o grandes espacios.",
-                    garantia: "Estructura resistente a la intemperie.",
-                    certificacion: "Base antivuelco certificada"
                 }
             }
         ]

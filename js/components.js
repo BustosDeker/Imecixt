@@ -72,7 +72,7 @@ const heroHTML = `
                 <div class="slide-content">
                     <h2 class="hero-title">Servicio de Recojo y Entrega</h2>
                     <p class="hero-subtitle">Comodidad y eficiencia para el mantenimiento de sus equipos.</p>
-                    <a href="https://wa.me/51930210841" target="_blank" class="hero-btn">
+                    <a href="https://wa.me/51924570575" target="_blank" class="hero-btn">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -108,9 +108,9 @@ const footerHTML = `
             
             <div class="footer-section">
                 <h4>Contacto</h4>
-                <p><i class="fas fa-phone"></i> 930210841</p>
+                <p><i class="fas fa-phone"></i> 924 570 575 / 979 771 512</p>
                 <p><i class="fas fa-envelope"></i> seguridad.imeci@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Av. Villareal N° 1388, Trujillo - Perú</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Federico Villarreal, Trujillo 13001 - Perú</p>
             </div>
             
             <div class="footer-section">
@@ -163,6 +163,9 @@ const searchAndFiltersHTML = `
             </button>
             <button class="filter-btn" data-category="extintoresCO2">
                 <i class="fas fa-cloud"></i> Extintores CO2
+            </button>
+            <button class="filter-btn" data-category="extintoresPQSUL">
+                <i class="fas fa-certificate"></i> Extintores PQS-UL
             </button>
             <button class="filter-btn" data-category="extintoresAcetato">
                 <i class="fas fa-utensils"></i> Acetato de Potasio
