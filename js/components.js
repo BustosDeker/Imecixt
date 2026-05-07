@@ -110,7 +110,7 @@ const footerHTML = `
                 <h4>Contacto</h4>
                 <p><i class="fas fa-phone"></i> 924 570 575 / 979 771 512</p>
                 <p><i class="fas fa-envelope"></i> seguridad.imeci@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Av. Federico Villarreal, Trujillo 13001 - Perú</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Federico Villarreal, Trujillo 13001<br>Au. Panamericana S/N, Moche 13014 - Perú</p>
             </div>
             
             <div class="footer-section">
