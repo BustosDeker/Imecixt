@@ -445,13 +445,13 @@ function mostrarDetallesVariante(nombreProducto, variantId) {
     }
     
     if (!productoEncontrado) {
-        alert('Información no disponible. Contáctanos para más detalles.');
+        mostrarToast('Recomendación', 'Información no disponible. Contáctanos para más detalles.');
         return;
     }
     
     const variante = productoEncontrado.variantes.find(v => v.id === variantId);
     if (!variante || !variante.detalles) {
-        alert('Primero debes seleccionar el tamaño o cantidad y despues presiona info');
+        mostrarToast('Recomendación', 'Primero debes seleccionar el tamaño o cantidad y despues presiona info');
         return;
     }
     
@@ -547,10 +547,53 @@ function cerrarModal() {
     }
 }
 
+// ==========================================
+// FUNCIÓN TOAST PERSONALIZADA
+// ==========================================
+function mostrarToast(titulo, mensaje) {
+    // Remover toast existente si hay
+    const existingToast = document.getElementById('toastOverlay');
+    if (existingToast) {
+        existingToast.remove();
+    }
+    
+    // Crear HTML del toast
+    const toastHTML = `
+        <div class="toast-overlay" id="toastOverlay" onclick="cerrarToast()">
+            <div class="toast-box" onclick="event.stopPropagation()">
+                <div class="toast-title">
+                    <i class="fas fa-lightbulb"></i>
+                    ${titulo}
+                </div>
+                <p class="toast-message">${mensaje}</p>
+                <button class="toast-btn" onclick="cerrarToast()">Aceptar</button>
+            </div>
+        </div>
+    `;
+    
+    // Insertar en el body
+    document.body.insertAdjacentHTML('beforeend', toastHTML);
+    
+    // Activar animación
+    setTimeout(() => {
+        const toast = document.getElementById('toastOverlay');
+        if (toast) toast.classList.add('active');
+    }, 10);
+}
+
+function cerrarToast() {
+    const toast = document.getElementById('toastOverlay');
+    if (toast) {
+        toast.classList.remove('active');
+        setTimeout(() => toast.remove(), 300);
+    }
+}
+
 // Cerrar modal con tecla ESC
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         cerrarModal();
+        cerrarToast();
     }
 });
 
