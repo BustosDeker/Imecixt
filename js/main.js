@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide - 1);
     }
     
-    // Auto-play cada 5 segundos
+    // Auto-play cada 6 segundos
     function startSlideShow() {
-        slideInterval = setInterval(nextSlide, 3000);
+        slideInterval = setInterval(nextSlide, 6000);
     }
     
     function stopSlideShow() {

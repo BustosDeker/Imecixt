@@ -55,27 +55,10 @@ const heroHTML = `
     <section id="inicio" class="hero-slider">
         <div class="slider-container">
             <div class="slide active" style="background-image: url('img/hero-1.jpg'); background-size: cover; background-position: center;">
-                <div class="slide-content">
-                    <h2 class="hero-title">Catálogo 2025</h2>
-                    <p class="hero-subtitle">Equipos y Productos de Seguridad de Alta Calidad</p>
-                    <a href="#productos" class="hero-btn">Ver Catálogo Completo</a>
-                </div>
             </div>
             <div class="slide" style="background-image: url('img/hero-2.jpg'); background-size: cover; background-position: center;">
-                <div class="slide-content">
-                    <h2 class="hero-title">Más de 12 Años de Experiencia</h2>
-                    <p class="hero-subtitle">Su seguridad es nuestra prioridad. Confíe en los expertos.</p>
-                    <a href="#contacto" class="hero-btn">Contáctanos Ahora</a>
-                </div>
             </div>
             <div class="slide" style="background-image: url('img/hero-3.jpg'); background-size: cover; background-position: center;">
-                <div class="slide-content">
-                    <h2 class="hero-title">Servicio de Recojo y Entrega</h2>
-                    <p class="hero-subtitle">Comodidad y eficiencia para el mantenimiento de sus equipos.</p>
-                    <a href="https://wa.me/51924570575" target="_blank" class="hero-btn">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                </div>
             </div>
         </div>
         

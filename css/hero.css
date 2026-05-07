@@ -105,7 +105,8 @@
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    color: var(--secondary);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
     line-height: 1.2;
     letter-spacing: -1px;
 }
@@ -113,9 +114,9 @@
 .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    font-weight: 300;
-    opacity: 0.95;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    color: var(--secondary);
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2);
     line-height: 1.6;
 }
 
