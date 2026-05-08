@@ -188,34 +188,34 @@ const botiquinesData = {
                 nombre: "Botiquines Plásticos",
                 descripcion: "Botiquines de plástico resistente.",
                 icono: "fa-briefcase-medical",
-        colorIcono: "icon-red",
+                colorIcono: "icon-red",
                 defaultVariant: "chico",
                 variantes: [
-                    { id: "plastico-chico", label: "CHICO", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Plástico resistente", "Dimensiones: 25x20 cm", "Cierre con broche", "Ligero"], usos: "Vehículos, oficinas pequeñas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
-                    { id: "plastico-grande", label: "GRANDE", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Plástico industrial", "Dimensiones: 35x25 cm", "Cierre seguro", "Separadores internos"], usos: "Empresas, fábricas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } }
+                    { id: "plastico-chico", label: "CHICO", imagen: "img/productos/botiquin-plastico-chico.jpg", detalles: { caracteristicas: ["Material: Plástico resistente", "Dimensiones: 25x20 cm", "Cierre con broche", "Ligero"], usos: "Vehículos, oficinas pequeñas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
+                    { id: "plastico-grande", label: "GRANDE", imagen: "img/productos/botiquin-plastico-grande.jpg", detalles: { caracteristicas: ["Material: Plástico industrial", "Dimensiones: 35x25 cm", "Cierre seguro", "Separadores internos"], usos: "Empresas, fábricas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } }
                 ]
             },
             {
                 nombre: "Botiquines de Lona",
                 descripcion: "Botiquines tipo lonchera, portátiles.",
                 icono: "fa-briefcase-medical",
-        colorIcono: "icon-red",
+                colorIcono: "icon-red",
                 defaultVariant: "standard",
                 variantes: [
-                    { id: "lona-chica", label: "LONA CHICA", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Lona resistente", "Tipo lonchera", "Cierre con cierre", "Ligera y portátil"], usos: "Vehículos, transporte.", garantia: "1 año de garantía.", certificacion: "Resistente al agua." } },
-                    { id: "lona-grande", label: "LONA GRANDE", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Lona industrial", "Mayor capacidad", "Múltiples compartimentos", "Asa reforzada"], usos: "Empresas, grupos grandes.", garantia: "1 año de garantía.", certificacion: "Resistente al agua." } }
+                    { id: "lona-20x16x6", label: "20X16X6 CM", imagen: "img/productos/botiquin-lona.jpg", detalles: { caracteristicas: ["Material: Lona resistente", "Dimensiones: 20x16x6 cm", "Tipo lonchera", "Cierre con cierre", "Ligera y portátil"], usos: "Vehículos, transporte.", garantia: "1 año de garantía.", certificacion: "Resistente al agua." } }
                 ]
             },
             {
                 nombre: "Botiquines de Madera",
                 descripcion: "Botiquines tradicionales de madera.",
                 icono: "fa-briefcase-medical",
-        colorIcono: "icon-red",
-                defaultVariant: "chico",
+                colorIcono: "icon-red",
+                defaultVariant: "20x30",
                 variantes: [
-                    { id: "madera-chico", label: "MADERA CHICO", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Madera tratada", "Dimensiones: 20x30 cm", "Cierre con llave", "Acabado natural"], usos: "Oficinas, consultorios.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
-                    { id: "madera-mediano", label: "MADERA MEDIANO", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Madera tratada", "Dimensiones: 30x40 cm", "Cierre con llave", "Acabado lacado"], usos: "Empresas medianas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
-                    { id: "madera-grande", label: "MADERA GRANDE", imagen: "img/productos/botiquin.jpg", detalles: { caracteristicas: ["Material: Madera dura", "Dimensiones: 40x50 cm", "Doble cerradura", "Acabado premium"], usos: "Grandes empresas, industrias.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } }
+                    { id: "madera-20x30", label: "20 X 30 CM", imagen: "img/productos/botiquin-madera-20x30.jpg", detalles: { caracteristicas: ["Material: Madera tratada", "Dimensiones: 20 x 30 cm", "Cierre con llave", "Acabado natural"], usos: "Oficinas, consultorios.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
+                    { id: "madera-24x34", label: "24 X 34 CM", imagen: "img/productos/botiquin-madera-24x34.jpg", detalles: { caracteristicas: ["Material: Madera tratada", "Dimensiones: 24 x 34 cm", "Cierre con llave", "Acabado natural"], usos: "Empresas pequeñas, locales.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
+                    { id: "madera-30x40", label: "30 X 40 CM", imagen: "img/productos/botiquin-madera-30x40.jpg", detalles: { caracteristicas: ["Material: Madera tratada", "Dimensiones: 30 x 40 cm", "Cierre con llave", "Acabado lacado"], usos: "Empresas medianas.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } },
+                    { id: "madera-40x50", label: "40 X 50 CM", imagen: "img/productos/botiquin-madera-40x50.jpg", detalles: { caracteristicas: ["Material: Madera dura", "Dimensiones: 40 x 50 cm", "Doble cerradura", "Acabado premium"], usos: "Grandes empresas, industrias.", garantia: "1 año de garantía.", certificacion: "Cumple normas salud ocupacional." } }
                 ]
             }
         ]
@@ -381,11 +381,11 @@ const seguridadVialData = {
                 nombre: "Kits Antiderrame",
                 descripcion: "Kits para contención de derrames químicos o hidrocarburos.",
                 icono: "fa-oil-can",
-        colorIcono: "icon-gray",
-                defaultVariant: "standard",
+                colorIcono: "icon-gray",
+                defaultVariant: "estandar",
                 variantes: [
-                    { id: "kit-hidrocarburo", label: "HIDROCARBUROS", imagen: "img/productos/kit-antiderrame.jpg", detalles: { caracteristicas: ["Absorbente para aceites", "Capacidad: 20-100 litros", "Incluye guantes, bolsas", "Estuche o cubeta"], usos: "Derrames de combustibles, aceites.", garantia: "Garantía de calidad.", certificacion: "Norma ambiental." } },
-                    { id: "kit-quimico", label: "QUÍMICOS", imagen: "img/productos/kit-antiderrame.jpg", detalles: { caracteristicas: ["Absorbente universal", "Capacidad: 20-100 litros", "Incluye EPP básico", "Estuche o cubeta"], usos: "Derrames de químicos, ácidos.", garantia: "Garantía de calidad.", certificacion: "Norma ambiental." } }
+                    { id: "kit-estandar", label: "ESTÁNDAR", imagen: "img/productos/kit-antiderrame-estandar.jpg", detalles: { caracteristicas: ["Modelo estándar", "Kit completo de contención", "Absorbente para aceites/hidrocarburos", "Incluye guantes, bolsas, barreras"], usos: "Derrames de combustibles, aceites, químicos.", garantia: "Garantía de calidad.", certificacion: "Norma ambiental." } },
+                    { id: "kit-camion", label: "PARA CAMIÓN", imagen: "img/productos/kit-antiderrame-camion.jpg", detalles: { caracteristicas: ["Modelo para camión", "Más completo con bandeja", "Dimensiones: 40x60x10 cm", "Ideal para vehículos pesados"], usos: "Transporte de carga, camiones, vehículos industriales.", garantia: "Garantía de calidad.", certificacion: "Norma ambiental." } }
                 ]
             }
         ]
