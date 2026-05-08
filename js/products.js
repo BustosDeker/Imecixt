@@ -46,7 +46,7 @@ const extintoresData = {
                 variantes: [
                     { id: "co2-5lb", label: "CO₂ 5 LB", imagen: "img/productos/C02_5L.jpg", detalles: { caracteristicas: ["Capacidad: 5 libras CO₂", "Peso total: 7 kg", "Altura: 45 cm", "Presión: 850 PSI"], usos: "Centros de cómputo, salas de servidores, electrónicos.", garantia: "1 año de garantía. No deja residuos.", certificacion: "Para equipos eléctricos energizados." } },
                     { id: "co2-10lb", label: "CO₂ 10 LB", imagen: "img/productos/C02_10L.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras CO₂", "Peso total: 14 kg", "Altura: 55 cm", "Presión: 850 PSI"], usos: "Data centers, cuartos eléctricos, laboratorios.", garantia: "1 año de garantía con recarga certificada.", certificacion: "Aprobado fuegos clase C." } },
-                    { id: "co2-15lb", label: "CO₂ 15 LB", imagen: "img/productos/C02_10L.jpg", detalles: { caracteristicas: ["Capacidad: 15 libras CO₂", "Peso total: 19 kg", "Altura: 65 cm", "Presión: 850 PSI"], usos: "Grandes data centers, plantas con equipos sensibles.", garantia: "1 año de garantía. No daña equipos.", certificacion: "Certificado y tarjeta de inspección." } }
+                    { id: "co2-15lb", label: "CO₂ 15 LB", imagen: "img/productos/C02_15L.jpg", detalles: { caracteristicas: ["Capacidad: 15 libras CO₂", "Peso total: 19 kg", "Altura: 65 cm", "Presión: 850 PSI"], usos: "Grandes data centers, plantas con equipos sensibles.", garantia: "1 año de garantía. No daña equipos.", certificacion: "Certificado y tarjeta de inspección." } }
                 ]
             },
             // Subcategoría: Extintores Tipo K
@@ -83,9 +83,9 @@ const extintoresULData = {
                 colorIcono: "icon-red",
                 defaultVariant: "10lb",
                 variantes: [
-                    { id: "buckeye-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Buckeye UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios, restaurantes.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } },
-                    { id: "buckeye-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-20lb.png", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Buckeye UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes, plantas.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } },
-                    { id: "buckeye-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Buckeye UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones, manufactureras.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } }
+                    { id: "buckeye-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-buckeye-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Buckeye UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios, restaurantes.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } },
+                    { id: "buckeye-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-buckeye-20lb.jpg", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Buckeye UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes, plantas.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } },
+                    { id: "buckeye-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-buckeye-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Buckeye UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones, manufactureras.", garantia: "1 año de garantía Buckeye.", certificacion: "UL internacional." } }
                 ]
             },
             {
@@ -95,9 +95,9 @@ const extintoresULData = {
                 colorIcono: "icon-red",
                 defaultVariant: "10lb",
                 variantes: [
-                    { id: "amerex-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Amerex UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } },
-                    { id: "amerex-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-20lb.png", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Amerex UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } },
-                    { id: "amerex-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Amerex UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } }
+                    { id: "amerex-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-amerex-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Amerex UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } },
+                    { id: "amerex-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-amerex-20lb.jpg", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Amerex UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } },
+                    { id: "amerex-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-amerex-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Amerex UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Amerex.", certificacion: "UL internacional." } }
                 ]
             },
             {
@@ -107,9 +107,9 @@ const extintoresULData = {
                 colorIcono: "icon-red",
                 defaultVariant: "10lb",
                 variantes: [
-                    { id: "ansul-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Ansul UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } },
-                    { id: "ansul-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-20lb.png", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Ansul UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } },
-                    { id: "ansul-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Ansul UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } }
+                    { id: "ansul-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-ansul-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Ansul UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } },
+                    { id: "ansul-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-ansul-20lb.jpg", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Ansul UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } },
+                    { id: "ansul-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-ansul-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Ansul UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Ansul.", certificacion: "UL internacional." } }
                 ]
             },
             {
@@ -119,9 +119,9 @@ const extintoresULData = {
                 colorIcono: "icon-red",
                 defaultVariant: "10lb",
                 variantes: [
-                    { id: "badger-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Badger UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } },
-                    { id: "badger-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-20lb.png", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Badger UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } },
-                    { id: "badger-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Badger UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } }
+                    { id: "badger-10lb", label: "PQS UL 10 LB", imagen: "img/productos/pqsul-badger-10lb.jpg", detalles: { caracteristicas: ["Capacidad: 10 libras PQS", "Marca: Badger UL", "Eficacia: 4A 60BC", "Altura: 48 cm"], usos: "Oficinas, comercios.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } },
+                    { id: "badger-20lb", label: "PQS UL 20 LB", imagen: "img/productos/pqsul-badger-20lb.jpg", detalles: { caracteristicas: ["Capacidad: 20 libras PQS", "Marca: Badger UL", "Eficacia: 10A 80BC", "Altura: 58 cm"], usos: "Talleres, almacenes.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } },
+                    { id: "badger-30lb", label: "PQS UL 30 LB", imagen: "img/productos/pqsul-badger-30lb.jpg", detalles: { caracteristicas: ["Capacidad: 30 libras PQS", "Marca: Badger UL", "Eficacia: 20A 120BC", "Altura: 68 cm"], usos: "Grandes instalaciones.", garantia: "1 año de garantía Badger.", certificacion: "UL internacional." } }
                 ]
             }
         ]
@@ -129,27 +129,16 @@ const extintoresULData = {
 };
 
 // ==========================================
-// CATEGORÍA 3: ACCESORIOS PARA EXTINTORES
+// CATEGORÍA 3: PORTA EXTINTORES
 // ==========================================
 const accesoriosData = {
     accesoriosExtintores: {
-        title: "ACCESORIOS PARA EXTINTORES",
-        description: "Porta extintores, gabinetes, pedestales y canastillas.",
+        title: "PORTA EXTINTORES",
+        description: "Gabinetes, pedestales y canastillas para extintores.",
         icon: "fa-box",
         iconColor: "icon-gray",
         grid: "products-grid-3",
         productos: [
-            {
-                nombre: "Porta Extintores",
-                descripcion: "Soportes metálicos para fijación de extintores.",
-                icono: "fa-box",
-        colorIcono: "icon-gray",
-                defaultVariant: "metal",
-                variantes: [
-                    { id: "porta-metal", label: "PORTA METAL", imagen: "img/productos/porta-extintor.jpg", detalles: { caracteristicas: ["Material: Metal resistente", "Acabado: Pintura epóxica", "Para extintores 6-12 kg", "Incluye tornillos"], usos: "Fijación de extintores en paredes.", garantia: "1 año de garantía.", certificacion: "Resistente a corrosion." } },
-                    { id: "porta-abrazadera", label: "CON ABRAZADERA", imagen: "img/productos/porta-abrazadera.jpg", detalles: { caracteristicas: ["Material: Metal con abrazadera", "Ajustable a diferentes tamaños", "Seguridad extra", "Fácil instalación"], usos: "Fijación segura con abrazadera.", garantia: "1 año de garantía.", certificacion: "Seguridad reforzada." } }
-                ]
-            },
             {
                 nombre: "Gabinetes",
                 descripcion: "Gabinetes para protección de extintores.",
@@ -421,9 +410,9 @@ const lucesData = {
         colorIcono: "icon-blue",
                 defaultVariant: "opalux",
                 variantes: [
-                    { id: "luz-opalux-2h", label: "OPALUX 2H", imagen: "img/productos/luz-emergencia.jpg", detalles: { caracteristicas: ["Autonomía: 2 horas", "Tecnología LED", "Batería recargable", "Indicador LED"], usos: "Edificios, oficinas, rutas evacuación.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } },
-                    { id: "luz-opalux-4h", label: "OPALUX 4H", imagen: "img/productos/luz-emergencia.jpg", detalles: { caracteristicas: ["Autonomía: 4 horas", "LED de alta potencia", "Batería de litio", "Prueba automática"], usos: "Hospitales, centros críticos.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } },
-                    { id: "luz-ricers", label: "RICERS", imagen: "img/productos/luz-emergencia.jpg", detalles: { caracteristicas: ["Marca: Ricers", "Autonomía: 2-4 horas", "LED eficiente", "Diseño compacto"], usos: "Edificios comerciales, industria.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } }
+                    { id: "luz-opalux", label: "OPALUX", imagen: "img/productos/luz-opalux.jpg", detalles: { caracteristicas: ["Marca: Opalux", "Autonomía: 2-4 horas", "Tecnología LED", "Batería recargable", "Indicador LED"], usos: "Edificios, oficinas, rutas evacuación.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } },
+                    { id: "luz-ricers", label: "RICERS", imagen: "img/productos/luz-ricers.jpg", detalles: { caracteristicas: ["Marca: Ricers", "Autonomía: 2-4 horas", "LED eficiente", "Diseño compacto"], usos: "Edificios comerciales, industria.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } },
+                    { id: "luz-sunlec", label: "SUN LEC", imagen: "img/productos/luz-sunlec.jpg", detalles: { caracteristicas: ["Marca: Sun Lec", "Autonomía: 2-4 horas", "LED de alta eficiencia", "Carga rápida"], usos: "Hospitales, centros comerciales, industria.", garantia: "1 año de garantía.", certificacion: "Norma de emergencia." } }
                 ]
             },
             {
