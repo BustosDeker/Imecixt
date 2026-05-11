@@ -252,6 +252,47 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('📱 WhatsApp: +51 997 437 390 / +51 979 771 512');
     console.log('📧 Email: seguridad.imeci@gmail.com');
     
+    // ==========================================
+    // ACTIVE NAVIGATION HIGHLIGHT
+    // ==========================================
+    function setActiveNavigation() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentHash = window.location.hash;
+        
+        // Remove all active classes first
+        document.querySelectorAll('[data-nav]').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // Determine which nav item should be active
+        let activeNav = null;
+        
+        if (currentPage === 'productos.html') {
+            activeNav = 'productos';
+        } else if (currentPage === 'index.html' || currentPage === '') {
+            if (currentHash === '#contacto') {
+                activeNav = 'contacto';
+            } else if (currentHash === '#sobre-nosotros') {
+                activeNav = 'nosotros';
+            } else {
+                activeNav = 'inicio';
+            }
+        }
+        
+        // Add active class to the appropriate nav item
+        if (activeNav) {
+            document.querySelectorAll(`[data-nav="${activeNav}"]`).forEach(link => {
+                link.classList.add('active');
+            });
+        }
+    }
+    
+    // Set active navigation on load
+    setActiveNavigation();
+    
+    // Update active navigation when hash changes
+    window.addEventListener('hashchange', setActiveNavigation);
+    
 });
 
 // ==========================================

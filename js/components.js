@@ -13,10 +13,10 @@ const headerHTML = `
             </a>
             
             <nav class="nav-desktop">
-                <a href="index.html">Inicio</a>
-                <a href="index.html#sobre-nosotros">Nosotros</a>
-                <a href="productos.html">Productos</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a href="index.html" data-nav="inicio">Inicio</a>
+                <a href="index.html#sobre-nosotros" data-nav="nosotros">Nosotros</a>
+                <a href="index.html#contacto" data-nav="contacto">Contacto</a>
+                <a href="productos.html" data-nav="productos">Productos</a>
             </nav>
             
             <div class="social-icons">
@@ -34,10 +34,10 @@ const headerHTML = `
         </div>
         
         <nav class="nav-mobile" id="navMobile">
-            <a href="index.html">Inicio</a>
-            <a href="index.html#sobre-nosotros">Nosotros</a>
-            <a href="productos.html">Productos</a>
-            <a href="index.html#contacto">Contacto</a>
+            <a href="index.html" data-nav="inicio">Inicio</a>
+            <a href="index.html#sobre-nosotros" data-nav="nosotros">Nosotros</a>
+            <a href="index.html#contacto" data-nav="contacto">Contacto</a>
+            <a href="productos.html" data-nav="productos">Productos</a>
             <div class="mobile-social">
                 <a href="https://www.facebook.com/share/1CnJvS297P/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook"></i> Facebook
