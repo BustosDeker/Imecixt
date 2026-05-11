@@ -91,7 +91,7 @@ const footerHTML = `
             
             <div class="footer-section">
                 <h4>Contacto</h4>
-                <p><i class="fas fa-phone"></i> 924 570 575 / 979 771 512</p>
+                <p><i class="fas fa-phone"></i> 997 437 390 / 979 771 512</p>
                 <p><i class="fas fa-envelope"></i> seguridad.imeci@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Av. Federico Villarreal, Trujillo 13001<br>Au. Panamericana S/N, Moche 13014 - Perú</p>
             </div>
@@ -511,7 +511,7 @@ function mostrarDetallesVariante(nombreProducto, variantId) {
                     </div>
 
                     <div class="modal-footer-compact">
-                        <a href="https://wa.me/51924570575?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productoEncontrado.nombre + ' ' + varianteLabel)}"
+                        <a href="https://wa.me/51997437390?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productoEncontrado.nombre + ' ' + varianteLabel)}"
                            target="_blank"
                            class="modal-btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
